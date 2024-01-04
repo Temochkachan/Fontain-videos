@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Videos</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Відео роботи фонтанів</h1> 
+    <h2><span style="color: white;">________</span> Фонтан з насадкою. <span style="color: white;">__________________</span> Фонтан з підвищеною висотою. <span style="color: white;">_________________</span> Звичайний фонтан</h2> 
+    <video id="video1" style="border: 2px solid gray;" height="400" width="400">
+        <source src="video/v1.mp4" />
+    </video>
+    <video id="video2" style="border: 2px solid gray; margin-left: 100px;" height="400" width="400">
+        <source src="video/v2.mp4" />
+    </video>
+    <video id="video3" style="border: 2px solid gray; margin-left: 100px;" height="400"  width="400">
+        <source src="video/v3.mp4" />
+    </video>
+
+    <br />
+
+    <button id="part1Button"  width: 50px; height: 40px; style = "margin-left: 120px;" >
+        <p style="font-size: 15px;">|<</p>
+    </button>
+    <button id="play1Button" width: 100px; height: 40px;><p style="font-size: 15px;">Play</p></button>
+    <button id="pause1Button" width: 100px; height: 40px;><p style="font-size: 15px;">Pause</p></button>
+
+    <button id="part2Button"  width: 50px; height: 40px; style = "margin-left: 375px;" >
+        <p style="font-size: 15px;">|<</p>
+    </button>
+    <button id="play2Button" width: 100px; height: 40px;><p style="font-size: 15px;">Play</p></button>
+    <button id="pause2Button" width: 100px; height: 40px;><p style="font-size: 15px;">Pause</p></button>
+
+    <button id="part3Button"  width: 50px; height: 40px; style = "margin-left: 375px;" >
+        <p style="font-size: 15px;">|<</p>
+    </button>
+    <button id="play3Button" width: 100px; height: 40px;><p style="font-size: 15px;">Play</p></button>
+    <button id="pause3Button" width: 100px; height: 40px;><p style="font-size: 15px;">Pause</p></button>
+
+    <script type="text/javascript">
+        window.onload = function () {
+            var v1 = document.getElementById("video1");
+
+            document.getElementById("part1Button").onclick = function () {
+                v1.currentTime = 0;
+            };
+
+            document.getElementById("play1Button").onclick = function () {
+                v1.play();
+            };
+
+            document.getElementById("pause1Button").onclick = function () {
+                v1.pause();
+            };
+
+            var v2 = document.getElementById("video2");
+
+            document.getElementById("part2Button").onclick = function () {
+                v2.currentTime = 0;
+            };
+
+            document.getElementById("play2Button").onclick = function () {
+                v2.play();
+            };
+
+            document.getElementById("pause2Button").onclick = function () {
+                v2.pause();
+            };
+            
+            var v3 = document.getElementById("video3");
+
+            document.getElementById("part3Button").onclick = function () {
+                v3.currentTime = 0;
+            };
+
+            document.getElementById("play3Button").onclick = function () {
+                v3.play();
+            };
+
+            document.getElementById("pause3Button").onclick = function () {
+                v3.pause();
+            };
+        }
+    </script>
+</body>
+</html>
